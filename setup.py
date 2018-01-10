@@ -34,15 +34,16 @@ setup(name='donkeycar',
     install_requires=['numpy', 
                       'pillow',
                       'docopt',
-                      'tornado',
+                      'tornado==4.5.3',
                       'requests',
-                      'keras',
+                      'keras==2.0.8',
                       'h5py',
                       'python-socketio',
                       'flask',
                       'eventlet',
                       'moviepy',
                       'pandas',
+                      'tensorflow>=1.1'
                      ],
 
     extras_require={
@@ -50,7 +51,8 @@ setup(name='donkeycar',
                         'picamera',
                         'Adafruit_PCA9685',
                         'pyserial',
-                        ]
+                        ],
+                    'dev': ['pytest']
                     },
     package_data={
         'donkeycar': extra_files, 
